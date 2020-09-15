@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:id="@+id/item_chat_box_linear_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_q_and_a"
+            android:tint="#000" />
+
+        <TextView
+            android:id="@+id/item_chat_box_text_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@mipmap/message_receive"
+            android:backgroundTint="#000"
+            android:paddingStart="16dp"
+            android:paddingTop="34dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:text="收到的消息" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_chat_box_linear_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:background="#ffffff"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/item_chat_box_text_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@mipmap/message_send"
+            android:paddingStart="16dp"
+            android:paddingTop="34dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:text="发送的消息" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_mine"
+            android:tint="#000" />
+    </LinearLayout>
+</RelativeLayout>

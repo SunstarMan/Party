@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaedf4"
+    tools:context=".fragment.StudyGroupFragment">
+
+    <ImageView
+        android:id="@+id/study_group_portrait_back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@mipmap/ic_bg_group"
+        app:layout_constraintHeight_percent="0.26"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/frag_study_group_text_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="djflskdjfls"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/study_group_member2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/frag_study_group_rv"
+        android:layout_width="0dp"
+        android:background="@mipmap/ic_bg_common"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingTop="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/study_group_portrait_back" />
+
+    <ImageView
+        android:id="@+id/study_group_portrait"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/shape_circular_red"
+        android:src="@drawable/ic_study_group_portrait"
+        app:layout_constraintBottom_toBottomOf="@id/study_group_portrait_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/study_group_portrait_back" />
+
+
+    <ImageView
+        android:id="@+id/study_group_member1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_circular"
+        app:layout_constraintBottom_toTopOf="@id/study_group_portrait"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/study_group_portrait" />
+
+    <ImageView
+        android:id="@+id/study_group_member2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_circular"
+        app:layout_constraintBottom_toBottomOf="@id/study_group_portrait_back"
+        app:layout_constraintLeft_toLeftOf="@id/study_group_portrait_back"
+        app:layout_constraintRight_toRightOf="@id/study_group_portrait_back"
+        app:layout_constraintTop_toTopOf="@id/study_group_portrait_back" />
+
+
+    <ImageView
+        android:id="@+id/study_group_member3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_circular"
+        app:layout_constraintBottom_toTopOf="@id/study_group_portrait"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@id/study_group_portrait"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

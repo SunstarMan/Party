@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg_common"
+    tools:context=".activity.MainActivity">
+
+    <!--<com.youth.banner.Banner-->
+        <!--android:id="@+id/test"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/label"-->
+        <!--app:layout_constraintTop_toTopOf="parent"/>-->
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_viewPager"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/label"
+        android:layout_height="0dp"/>
+
+    <!--标签栏-->
+    <LinearLayout
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.07">
+
+        <LinearLayout
+            android:id="@+id/label_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_label_home"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:tint="#ff4400"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:id="@+id/text_label_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="14dp"
+                android:textColor="#ff4400"
+                android:text="主页" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/label_intelli_study"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_label_intelli_study"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_intelli_study"/>
+
+            <TextView
+                android:id="@+id/text_label_intelli_study"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="14dp"
+                android:textColor="#b0b2bf"
+                android:text="智慧学习"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/label_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_label_message"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_message"/>
+
+            <TextView
+                android:id="@+id/text_label_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="消息"
+                android:textColor="#b0b2bf"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/label_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_label_mine"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_mine"/>
+
+            <TextView
+                android:id="@+id/text_label_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#b0b2bf"
+                android:layout_marginTop="4dp"
+                android:text="我的"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

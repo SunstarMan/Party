@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg_common"
+    tools:context=".fragment.TestPaperFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/test_paper_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_search"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.88">
+
+        <LinearLayout
+            android:id="@+id/test_paper_wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/test_paper_toDo"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="错题" />
+
+            <TextView
+                android:id="@+id/frag_test_paper_text_error_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="20"
+                android:textColor="#000"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/test_paper_toDo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@+id/test_paper_wrong"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待做题" />
+
+            <TextView
+                android:id="@+id/frag_test_paper_text_solving_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="3000"
+                android:textColor="#000"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="个"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@id/test_paper_wrong"
+            app:layout_constraintLeft_toRightOf="@id/test_paper_wrong" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="个"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@id/test_paper_toDo"
+            app:layout_constraintLeft_toRightOf="@id/test_paper_toDo" />
+
+        <TextView
+            android:id="@+id/test_paper_proverb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日箴言"
+            android:textColor="#ff4400"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/test_paper_wrong"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/test_paper_proverb_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="不去尝试才是失败……"
+            app:layout_constraintLeft_toLeftOf="@id/test_paper_proverb"
+            app:layout_constraintTop_toBottomOf="@id/test_paper_proverb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_study_paper"
+            android:paddingLeft="8dp"
+            android:paddingTop="2dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="2dp"
+            android:text="个人练习"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/test_paper_proverb_context"
+            app:layout_constraintLeft_toRightOf="@id/test_paper_toDo"
+            app:layout_constraintTop_toTopOf="@id/test_paper_proverb" />
+
+        <View
+            android:id="@+id/test_paper_view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="#999"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_paper_proverb_context"/>
+
+        <TextView
+            android:id="@+id/test_paper_jindu_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="进度"
+            app:layout_constraintLeft_toLeftOf="@id/test_paper_proverb"
+            app:layout_constraintTop_toBottomOf="@id/test_paper_view" />
+
+        <TextView
+            android:id="@+id/frag_test_paper_text_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="71 / 3071"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/test_paper_jindu_context"
+            app:layout_constraintLeft_toRightOf="@id/test_paper_jindu_context" />
+
+        <ProgressBar
+            android:id="@+id/frag_test_paper_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="20"
+            android:progressDrawable="@drawable/shape_test_paper_progress_bar"
+            app:layout_constraintLeft_toLeftOf="@id/test_paper_jindu_context"
+            app:layout_constraintTop_toBottomOf="@id/test_paper_jindu_context"
+            app:layout_constraintWidth_percent="0.8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/test_paper_text_up_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="个人练习，增强能力"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/test_paper_frame" />
+
+    <ImageView
+        android:id="@+id/test_paper_begin_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/shape_test_paper_begin"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/test_paper_text_up_begin"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始做练习"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/test_paper_begin_frame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/test_paper_begin_frame" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

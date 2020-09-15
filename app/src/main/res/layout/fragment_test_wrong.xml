@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg_common"
+    tools:context=".fragment.TestWrongFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/test_wrong_frame_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/test_wrong_option_1_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_color_change_wrong2"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.44" />
+
+        <TextView
+            android:id="@+id/test_wrong_option_1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="总纲"
+            android:textColor="#4facfe"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_1_bg"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_1_bg"
+            app:layout_constraintTop_toTopOf="@id/test_wrong_option_1_bg" />
+
+        <TextView
+            android:id="@+id/frag_test_wrong_text_zonggang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="错题数：11"
+            android:textColor="#222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_1_text"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_1_text"
+            app:layout_constraintTop_toBottomOf="@id/test_wrong_option_1_text" />
+
+
+        <ImageView
+            android:id="@+id/test_wrong_option_2_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_color_change_wrong2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@id/test_wrong_option_1_bg"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.44" />
+
+        <TextView
+            android:id="@+id/test_wrong_option_2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="党的组织制度"
+            android:textColor="#4facfe"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_2_bg"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_2_bg"
+            app:layout_constraintTop_toTopOf="@id/test_wrong_option_1_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="错题数：0"
+            android:textColor="#222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_2_text"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_2_text"
+            app:layout_constraintTop_toBottomOf="@id/test_wrong_option_2_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/test_wrong_frame_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintLeft_toLeftOf="@id/test_wrong_frame_1"
+        app:layout_constraintRight_toRightOf="@id/test_wrong_frame_1"
+        app:layout_constraintTop_toBottomOf="@id/test_wrong_frame_1">
+
+        <ImageView
+            android:id="@+id/test_wrong_option_3_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_color_change_wrong2"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.44" />
+
+        <TextView
+            android:id="@+id/test_wrong_option_3_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="党的中央组织"
+            android:textColor="#4facfe"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_3_bg"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_3_bg"
+            app:layout_constraintTop_toTopOf="@id/test_wrong_option_3_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="错题数：0"
+            android:textColor="#222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_3_text"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_3_text"
+            app:layout_constraintTop_toBottomOf="@id/test_wrong_option_3_text" />
+
+
+        <ImageView
+            android:id="@+id/test_wrong_option_4_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_color_change_wrong2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@id/test_wrong_option_3_bg"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.44" />
+
+        <TextView
+            android:id="@+id/test_wrong_option_4_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="党的地方组织"
+            android:textColor="#4facfe"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_4_bg"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_4_bg"
+            app:layout_constraintTop_toTopOf="@id/test_wrong_option_3_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="错题数：0"
+            android:textColor="#222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_4_text"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_4_text"
+            app:layout_constraintTop_toBottomOf="@id/test_wrong_option_4_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/test_wrong_frame_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintLeft_toLeftOf="@id/test_wrong_frame_2"
+        app:layout_constraintRight_toRightOf="@id/test_wrong_frame_2"
+        app:layout_constraintTop_toBottomOf="@id/test_wrong_frame_2">
+
+        <ImageView
+            android:id="@+id/test_wrong_option_5_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_color_change_wrong2"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.44" />
+
+        <TextView
+            android:id="@+id/test_wrong_option_5_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="党的基层组织"
+            android:textColor="#4facfe"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_5_bg"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_5_bg"
+            app:layout_constraintTop_toTopOf="@id/test_wrong_option_5_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="错题数：0"
+            android:textColor="#222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_5_text"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_5_text"
+            app:layout_constraintTop_toBottomOf="@id/test_wrong_option_5_text" />
+
+
+        <ImageView
+            android:id="@+id/test_wrong_option_6_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_color_change_wrong2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@id/test_wrong_option_5_bg"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.44" />
+
+        <TextView
+            android:id="@+id/test_wrong_option_6_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="党的干部"
+            android:textColor="#4facfe"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_6_bg"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_6_bg"
+            app:layout_constraintTop_toTopOf="@id/test_wrong_option_5_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="错题数：0"
+            android:textColor="#222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_6_text"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_6_text"
+            app:layout_constraintTop_toBottomOf="@id/test_wrong_option_6_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/test_wrong_frame_4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintLeft_toLeftOf="@id/test_wrong_frame_3"
+        app:layout_constraintRight_toRightOf="@id/test_wrong_frame_3"
+        app:layout_constraintTop_toBottomOf="@id/test_wrong_frame_3">
+
+        <ImageView
+            android:id="@+id/test_wrong_option_7_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_color_change_wrong2"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.44" />
+
+        <TextView
+            android:id="@+id/test_wrong_option_7_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="党的纪律检查机关"
+            android:textColor="#4facfe"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_7_bg"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_7_bg"
+            app:layout_constraintTop_toTopOf="@id/test_wrong_option_7_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="错题数：0"
+            android:textColor="#222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_7_text"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_7_text"
+            app:layout_constraintTop_toBottomOf="@id/test_wrong_option_7_text" />
+
+
+        <ImageView
+            android:id="@+id/test_wrong_option_8_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_color_change_wrong2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@id/test_wrong_option_7_bg"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.44" />
+
+        <TextView
+            android:id="@+id/test_wrong_option_8_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="党和共青团的关系"
+            android:textColor="#4facfe"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_8_bg"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_8_bg"
+            app:layout_constraintTop_toTopOf="@id/test_wrong_option_7_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="错题数：0"
+            android:textColor="#222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/test_wrong_option_8_text"
+            app:layout_constraintRight_toRightOf="@id/test_wrong_option_8_text"
+            app:layout_constraintTop_toBottomOf="@id/test_wrong_option_8_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
